@@ -511,22 +511,109 @@ a:visited {
     font-weight: 700;
   }
 
-.feature-item {
-  padding-left: 94px;
-  padding-bottom: 2.5rem;
-
-  position: relative;
+.feature__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
+@media (min-width: 800px) {
+
+.feature-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start
+}
+  }
+
+.feature-item {
+  padding-bottom: 2.5rem;
+
+  -webkit-box-flex: 0;
+
+      -ms-flex-positive: 0;
+
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  min-width: 80%;
+}
+
+@media (min-width: 530px) {
+
+.feature-item {
+    min-width: 90%
+}
+  }
+
+@media (min-width: 800px) {
+
+.feature-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    min-width: 360px
+}
+  }
+
+@media (min-width: 800px) {
+
+.feature-item {
+    padding-left: 94px
+}
+  }
+
 .feature-item__icon {
-    position: absolute;
-    left: 0;
+    margin: 0 auto;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    display: block;
+  }
+
+@media (min-width: 800px) {
   }
 
 .feature-item__title {
-    font-size: 1.875rem;
+    font-size: 1.6rem;
     font-weight: 300;
     margin-bottom: 0.8rem;
+    margin-top: 0.7em;
+    text-align: center;
+  }
+
+@media (min-width: 530px) {
+
+.feature-item__title {
+      font-size: 1.875rem;
+      margin-top: 1em;
+      text-align: left
+  }
+  }
+
+.feature-item p {
   }
 
 .large-hero {
