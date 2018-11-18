@@ -12,7 +12,6 @@ img {
   box-sizing: border-box;
 }
 
-a,
-a:visited {
+a {
   color: $mainOrange;
 }
