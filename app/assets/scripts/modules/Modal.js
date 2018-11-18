@@ -25,8 +25,6 @@ class Modal {
 
   openModal() {
     this.modal.addClass('modal--is-visible');
-    console.log('hi');
-
     return false;
   }
   closeModal() {

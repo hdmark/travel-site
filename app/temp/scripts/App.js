@@ -11754,8 +11754,6 @@ var Modal = function () {
     key: 'openModal',
     value: function openModal() {
       this.modal.addClass('modal--is-visible');
-      console.log('hi');
-
       return false;
     }
   }, {
