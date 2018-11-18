@@ -5,6 +5,10 @@
     margin-bottom: 1rem;
   }
 
+  &--t-padding {
+    padding-top: 80px;
+  }
+
   @mixin atMedium {
     & {
       display: flex;
@@ -23,6 +27,11 @@
       padding-right: 100px;
     }
 
+    &--gutters-small > div:not(:last-child) {
+      padding-right: 0;
+      margin-right: 45px;
+    }
+
     &__medium-4 {
       width: 33.33%;
     }
@@ -39,6 +48,23 @@
     }
     &__medium-8--smaller {
       width: 63%;
+    }
+  }
+
+  &--testimonials {
+    & > :last-child {
+      color: inherit;
+    }
+  }
+
+  // begin equal height at medium
+  &--equal-height-at-medium {
+    @mixin atMedium {
+      display: flex;
+    }
+
+    & > div {
+      display: flex;
     }
   }
 }
