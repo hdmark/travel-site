@@ -5,8 +5,10 @@
 @import 'modules/_btn';
 @import 'modules/_generic-content-container';
 @import 'modules/_feature-item';
+@import 'modules/_site-header';
 @import 'modules/_large-hero';
 @import 'modules/_page-section';
+@import 'modules/_primary-nav';
 @import 'modules/_section-title';
 @import 'modules/_site-footer';
 @import 'modules/_sprite';
